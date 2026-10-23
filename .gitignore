@@ -1,0 +1,6 @@
+eye-env/
+.venv/
+__pycache__/
+*.pyc
+screensaver/build/
+.DS_Store
