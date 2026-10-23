@@ -2,7 +2,7 @@
 Döngüyü pencere açmadan MP4'e kaydeder (ffmpeg gerekir).
 
   python tools/record.py cikti.mp4                    # 1280x760, alt bar dahil
-  EOC_W=1920 EOC_H=1200 EOC_SAVER=1 python tools/record.py screensaver/EyeOfCreation.mp4
+  EOC_W=1920 EOC_H=1200 EOC_SAVER=1 python tools/record.py assets/EyeOfCreation.mp4
 
 Video tam olarak bir döngü (55 sn) sürer; başı ve sonu aynı kare olduğundan
 loop'ta dikiş görünmez.

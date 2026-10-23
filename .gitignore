@@ -2,5 +2,7 @@ eye-env/
 .venv/
 __pycache__/
 *.pyc
-screensaver/build/
+macos/build/
+windows/bin/
+windows/obj/
 .DS_Store

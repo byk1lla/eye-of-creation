@@ -22,7 +22,7 @@ lipo -create build/EyeOfCreation-arm64 build/EyeOfCreation-x86_64 \
   -output "$OUT/Contents/MacOS/EyeOfCreation"
 
 cp Info.plist "$OUT/Contents/"
-cp EyeOfCreation.mp4 thumbnail.png thumbnail@2x.png "$OUT/Contents/Resources/"
+cp ../assets/EyeOfCreation.mp4 thumbnail.png thumbnail@2x.png "$OUT/Contents/Resources/"
 
 codesign --force --deep --sign - "$OUT"
 echo "Hazır: $(pwd)/$OUT"

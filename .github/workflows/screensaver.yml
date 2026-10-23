@@ -17,21 +17,21 @@ jobs:
 
       - name: Build EyeOfCreation.saver
         run: |
-          chmod +x screensaver/build.sh
-          ./screensaver/build.sh
+          chmod +x macos/build.sh
+          ./macos/build.sh
 
       - name: Zip
         run: |
-          cd screensaver/build
+          cd macos/build
           ditto -c -k --sequesterRsrc --keepParent EyeOfCreation.saver EyeOfCreation.saver.zip
 
       - uses: actions/upload-artifact@v4
         with:
           name: EyeOfCreation.saver
-          path: screensaver/build/EyeOfCreation.saver.zip
+          path: macos/build/EyeOfCreation.saver.zip
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: screensaver/build/EyeOfCreation.saver.zip
+          files: macos/build/EyeOfCreation.saver.zip
