@@ -35,7 +35,7 @@ python eye_of_creation.py
 
 Script `.saver` paketini derleyip `~/Library/Screen Savers` içine kopyalar ve Ekran Koruyucu ayarlarını açar. Listeden **Eye of Creation**'ı seçmen yeterli.
 
-**Hazır paket:** [Releases](../../releases) sayfasındaki `EyeOfCreation.saver.zip` dosyasını indir, aç ve çift tıkla. Paket imzasız olduğu için macOS ilk seferde engelleyebilir. Engellerse şunu çalıştır:
+**Hazır paket:** GitHub Actions her push'ta `.saver`'ı macOS'ta derleyip artifact olarak koyuyor, `v*` tag'lerinde de [Releases](../../releases) sayfasına ekliyor. `EyeOfCreation.saver.zip` dosyasını indir, aç ve çift tıkla. Paket imzasız olduğu için macOS ilk seferde engelleyebilir. Engellerse şunu çalıştır:
 
 ```bash
 xattr -dr com.apple.quarantine ~/Library/Screen\ Savers/EyeOfCreation.saver
